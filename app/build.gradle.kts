@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -35,6 +36,9 @@ android {
     kotlinOptions {
         jvmTarget = "11"
     }
+    buildFeatures{
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -46,4 +50,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    //Navigation
+    val navVersion = "2.9.6"
+    implementation("androidx.navigation:navigation-fragment:${navVersion}")
+    implementation("androidx.navigation:navigation-ui:${navVersion}")
+    //indicator
+    implementation("me.relex:circleindicator:2.1.6")
+    //Glide
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+
+
 }
