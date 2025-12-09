@@ -10,15 +10,17 @@
         android:name="com.geeks.homecirclelndicator.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board" >
+
         <action
-            android:id="@+id/action_onBoardFragment_to_secondActivity"
-            app:destination="@id/secondActivity"
+            android:id="@+id/action_onBoardFragment_to_secondFragment"
+            app:destination="@id/secondFragment"
             app:popUpTo="@id/nav_host"
             app:popUpToInclusive="true"/>
     </fragment>
-    <activity
-        android:id="@+id/secondActivity"
-        android:name="com.geeks.homecirclelndicator.SecondActivity"
-        android:label="activity_second"
-        tools:layout="@layout/activity_second" />
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.geeks.homecirclelndicator.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" />
+
 </navigation>
