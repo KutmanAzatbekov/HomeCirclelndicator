@@ -31,7 +31,7 @@ class OnBoardFragment : Fragment() {
     }
 
     private fun navigateToMain(){
-      findNavController().navigate(OnBoardFragmentDirections.actionOnBoardFragmentToSecondActivity())
+      findNavController().navigate(OnBoardFragmentDirections.actionOnBoardFragmentToSecondFragment())
     }
 
     private fun onSkip(endPosition: Int){
