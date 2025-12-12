@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/onBoardFragment"
-        android:name="com.geeks.homecirclelndicator.OnBoardFragment"
+        android:name="com.geeks.homecirclelndicator.ui.on_board.OnBoardFragment"
         android:label="fragment_on_board"
         tools:layout="@layout/fragment_on_board" >
 
@@ -19,7 +19,7 @@
     </fragment>
     <fragment
         android:id="@+id/secondFragment"
-        android:name="com.geeks.homecirclelndicator.SecondFragment"
+        android:name="com.geeks.homecirclelndicator.ui.SecondFragment"
         android:label="fragment_second"
         tools:layout="@layout/fragment_second" />
 
